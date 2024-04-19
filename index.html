@@ -5,7 +5,7 @@
   <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="pragma" content="no-cache" />
   <meta http-equiv="expires" content="0" />
-  <title>Ajax</title>
+  <title>Plane class</title>
   <style>
 	body{
 		text-align: center;
@@ -32,6 +32,54 @@
 .button:hover {
   background: linear-gradient(#378de5, #79bbff);
 }
+.mymenu{
+            list-style: none; /*убираем маркеры списка*/
+            display: flex; /*Элементы списка по флекс модели*/
+            justify-content: center;
+            width: 100%;
+        }
+        .mymenu > li{ /*дочерний селектор*/
+           /* border-style: solid;
+            border-color:  rgb(167, 84, 32);*/
+            padding:5px;
+            position: relative; /*для позиционирования абсолютных блоков*/
+        }
+        .mymenu a{ /*селектор вложенного элемента*/
+            text-decoration: none;
+            display: inline-block;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            border-style: solid;
+            border-color:  rgb(167, 84, 32);
+            border-radius: 10px;
+            background-color: rgb(167, 84, 32);
+            color:  rgb(255, 255, 255);
+            box-shadow: inset 0px 0px 0px 0px rgb(255, 255, 255);;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: .5s;
+        }
+        .mymenu a:hover{
+            box-shadow: inset 0px 0px 0px 4px  rgb(255, 255, 255);;
+        }
+        
+           
+   
+        .mymenu li ul{ /*начальные стили для выпадающего меню*/
+            display:none; /*изначально меню нету*/
+            position: absolute; /*позиционирование поверх других*/
+            left:30px;/*отступ слева*/
+            width: fit-content;
+            background-color:  rgb(167, 84, 32);
+        }
+        .mymenu li> ul> li {
+            width: 150px; /*ширина выпадающего меню*/
+        }
+        .mymenu li:hover ul{ /*Задание стилей псевдокласса для */
+                            /*дочернего элемента*/
+            display:block; /*так появляется и исчезает меню*/
+        }
   </style>
   <script>
   let prokot; 
@@ -71,6 +119,17 @@
 	<div class="button kot3">Загрузить котика 3</div>
 	
 	<div class="prokotikov"></div>
+  <ul class="mymenu">
+    <li><a href="#">Пункт меню 1</a>
+        <ul>
+            <li><a href="#">Подпункт 1</a></li>
+            <li><a href="#">Подпункт 1</a></li>
+            <li><a href="#">Подпункт 1</a></li>
+            <li><a href="#">Подпункт 1</a></li>
+            <li><a href="#">Подпункт 1</a></li>
+        </ul>
+    </li>
+</ul>
  </body>
  </html>
  
