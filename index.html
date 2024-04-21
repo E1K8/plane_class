@@ -53,11 +53,11 @@ h1{
   <script>
   let prokot; 
       window.onload=function(){ // Вешаются обработчики событий из кода на кнопки при загрузке окна
-          let kot1=document.querySelector(".kot1");
+          let kot1=document.querySelector(".plane1");
           kot1.onclick=LoadKot;
-          let kot2=document.querySelector(".kot2");
+          let kot2=document.querySelector(".plane2");
           kot2.onclick=LoadKot;
-          let kot3=document.querySelector(".kot3");
+          let kot3=document.querySelector(".plane3");
           kot3.onclick=LoadKot;
           prokot = document.querySelector(".prokotikov");
       }
@@ -65,9 +65,9 @@ h1{
       {
           let url="";
 	       // Проверяется кто вызвал функцию через this - 
-          if (this.classList.contains("kot1"))  url = 'plane1.html'; 
-          else if (this.classList.contains("kot2")) url = 'plane2.html';// Если в сss классах кнопки написано kot2 то вызвать kotik2.html
-          else if (this.classList.contains("kot3")) url = 'plane3.html';
+          if (this.classList.contains("plane1"))  url = 'plane1.html'; 
+          else if (this.classList.contains("plane2")) url = 'plane2.html';// Если в сss классах кнопки написано kot2 то вызвать kotik2.html
+          else if (this.classList.contains("plane3")) url = 'plane3.html';
           let response = await fetch(url); // Отправляем пеона за нашим файлом и прерываем метод
           // Сюда мы попадаем, когда пеон вернулся с результатом
           if (response.ok) { // если HTTP-статус в диапазоне 200-299 
