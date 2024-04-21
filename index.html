@@ -65,9 +65,9 @@ h1{
       {
           let url="";
 	       // Проверяется кто вызвал функцию через this - 
-          if (this.classList.contains("kot1"))  url = 'kotik1.html'; 
-          else if (this.classList.contains("kot2")) url = 'kotik2.html';// Если в сss классах кнопки написано kot2 то вызвать kotik2.html
-          else if (this.classList.contains("kot3")) url = 'kotik3.html';
+          if (this.classList.contains("kot1"))  url = 'plane1.html'; 
+          else if (this.classList.contains("kot2")) url = 'plane2.html';// Если в сss классах кнопки написано kot2 то вызвать kotik2.html
+          else if (this.classList.contains("kot3")) url = 'plane3.html';
           let response = await fetch(url); // Отправляем пеона за нашим файлом и прерываем метод
           // Сюда мы попадаем, когда пеон вернулся с результатом
           if (response.ok) { // если HTTP-статус в диапазоне 200-299 
