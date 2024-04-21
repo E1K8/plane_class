@@ -53,12 +53,12 @@ h1{
   <script>
   let prokot; 
       window.onload=function(){ // Вешаются обработчики событий из кода на кнопки при загрузке окна
-          let kot1=document.querySelector(".plane1");
-          kot1.onclick=LoadKot;
-          let kot2=document.querySelector(".plane2");
-          kot2.onclick=LoadKot;
-          let kot3=document.querySelector(".plane3");
-          kot3.onclick=LoadKot;
+          let pln1=document.querySelector(".plane1");
+          pln1.onclick=LoadKot;
+          let pln2=document.querySelector(".plane2");
+          pln2.onclick=LoadKot;
+          let pln3=document.querySelector(".plane3");
+          pln3.onclick=LoadKot;
 	  prokot = document.querySelector(".prokotikov");
       }
       async function LoadKot() // Асинхронный метод для работы с промисами
