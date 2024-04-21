@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,20 +8,26 @@
   <meta http-equiv="expires" content="0" />
   <title>Plane class</title>
   <style>
-	body{
-		text-align: center;
-		font-size:40px;
+body{
+	text-align: center;
+	font-size:40px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
-		margin-left: 100px;
-		width: 6em;
-	}
+	margin-left: 300px;
+	width: 6em;
+}
+img{
+	width: 100vw;
+	hight: 100vh;
+}
+
+intro{
+	grid-column: span 3;
+}
     
  .button {
   font-size:15px;
   font-family:Arial;
-  margin: 20px;
+  margin: 40px;
   width:200px;
   height:50px;
   border-width:1px;
@@ -69,14 +76,13 @@
             }
       }
   </script>
-</head>
+</head>	
+	<img src = "intro.png"></img>
  <body>
-	<div class="button kot1">Загрузить котика 1</div>
-	<br>
-	<div class="button kot2">Загрузить котика 2</div>
-	<br>
-	<div class="button kot3">Загрузить котика 3</div>
 	
+	<div class="button kot1">Загрузить котика 1</div>
+	<div class="button kot2">Загрузить котика 2</div>
+	<div class="button kot3">Загрузить котика 3</div>
 	<div class="prokotikov"></div>
  </body>
  </html>
